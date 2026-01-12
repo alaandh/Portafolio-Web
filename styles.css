@@ -1,0 +1,360 @@
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 60px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  line-height: 1.6;
+}
+
+h1,
+h2 {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  margin-top: 0;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+
+#navbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+#navbar > a {
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+#navbar > a:hover {
+  color: dodgerblue;
+}
+
+#welcome-section {
+  background-color: #f8f9fa;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+#projects {
+  background-color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+#skills {
+  background-color: #f8f9fa;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+/*
+* Sección de About
+*/
+
+.welcome-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 800px;
+}
+
+.profile-picture {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 2rem;
+}
+
+.profile-name {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  color: #212529;
+}
+
+.profile-title {
+  font-size: 1.5rem;
+  color: #6c757d;
+  margin-bottom: 1rem;
+}
+
+.profile-bio {
+  font-size: 1.1rem;
+  max-width: 600px;
+  color: #495057;
+  margin-bottom: 2rem;
+}
+
+.cv-link,
+.contact-links {
+  margin-top: 1rem;
+}
+
+.contact-item {
+  text-decoration: none;
+}
+
+.btn-download {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: dodgerblue;
+  color: #fff;
+  border: 2px solid #212529;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-download:hover {
+  background-color: #0b6cb7;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  margin-left: 0.5rem;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.contact-item .icon {
+  width: 36px;
+  height: 36px;
+  transition: transform 0.3s ease;
+}
+
+.contact-item .icon:hover {
+  transform: translateY(-5px);
+}
+
+.email-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.email {
+  background-color: transparent;
+  color: #212529;
+  font-weight: bold;
+  border: 2px solid dodgerblue;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  margin: 0;
+}
+
+.btn-email {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  background-color: dodgerblue;
+  border: 2px solid #212529;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-email:hover {
+  background-color: #0b6cb7;
+}
+
+.email-copy-link {
+  display: none;
+}
+
+.social-icons-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .contact-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.4rem;
+  }
+
+  .social-icons-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .email-group {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+  }
+
+   html {
+    scroll-padding-top: 150px; 
+  }
+}
+
+@media (min-width: 401px) and (max-width: 768px) {
+html {
+    scroll-padding-top: 60px; /* Ajusta este valor si es necesario */
+  }
+
+}
+
+@media (max-width: 400px) {
+  #navbar {
+    flex-direction: column; 
+    align-items: center; 
+    padding: 1rem 0; /
+  }
+
+  #navbar > a {
+    padding: 0.75rem 1rem; 
+    font-size: 0.8rem; 
+  }
+}
+
+/*
+* Sección de Proyectos
+*/
+
+#projects > h2 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #212529;
+  text-align: center;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-items: center;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 6rem;
+  width: 100%;
+}
+
+.project-tile {
+  margin: 1rem;
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  text-align: center;
+}
+
+.project-tile:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+/*
+ * Sección de Habilidades
+ */
+
+#skills > h2 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #212529;
+  text-align: center;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-items: center;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 6rem;
+  width: 100%;
+}
+
+.skills-item {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  padding: 6rem;
+}
+
+.skills-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+}
+
+.skills-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: #343a40;
+  color: #f8f9fa;
+}
