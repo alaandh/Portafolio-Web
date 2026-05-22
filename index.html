@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/portafolio-icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Alan Heizenreder | Portafolio Web</title>
+  </head>
+  <body>
+    <header>
+      <button
+        id="menuBtn"
+        aria-label="Abrir menú"
+        aria-controls="mobilePanel"
+        aria-expanded="false"
+      >
+        <img src="images/menu-icon.png" alt="menu" class="menu-icon" />
+      </button>
+      <nav id="navbar">
+        <a href="#welcome-section">Sobre mí</a>
+        <a href="#projects">Proyectos</a>
+        <a href="#certificaciones">Certificaciones</a>
+        <a href="#skills">Habilidades</a>
+      </nav>
+
+      <div id="mobilePanel" class="mobile-panel" aria-hidden="true">
+        <div class="mobile-panel-content">
+          <nav class="mobile-nav">
+            <a href="#welcome-section">Sobre mí</a>
+            <a href="#projects">Proyectos</a>
+            <a href="#certificaciones">Certificaciones</a>
+            <a href="#skills">Habilidades</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="welcome-section">
+        <div class="welcome-content">
+          <img
+            src="images/me-picture.jpg"
+            alt="Fotografía de Alan Heizenreder"
+            class="profile-picture"
+          />
+
+          <div class="profile-info">
+            <h1 class="profile-name">Alan Heizenreder</h1>
+            <h2 class="profile-title">Software Developer</h2>
+            <p class="profile-bio">
+              Estudiante de segundo año de <b>Ingeniería en Informática</b> en
+              la Universidad Nacional de Avellaneda. Cuento con una sólida
+              formación en el desarrollo de software, con experiencia práctica
+              en lenguajes como <b>C++, Java, Python y JavaScript</b> enfocado
+              en la creación de soluciones eficientes y estructuradas.
+            </p>
+          </div>
+
+          <a
+            class="btn-download"
+            href="documents/alanheizenreder-cv.pdf"
+            download
+            >Descarga mi CV
+            <img src="images/cv-icon.png" class="icon" alt="Icono de CV" />
+          </a>
+
+          <div class="contact-links">
+            <div class="social-icons-group">
+              <a
+                href="https://github.com/alaandh"
+                target="_blank"
+                class="contact-item"
+              >
+                <img class="icon" src="images/github-icon.png" alt="GitHub" />
+              </a>
+              <a
+                href="https://wa.me/5491130775692"
+                target="_blank"
+                class="contact-item"
+              >
+                <img
+                  class="icon"
+                  src="images/whatsapp-icon.png"
+                  alt="WhatsApp"
+                />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/alan-heizenreder/"
+                target="_blank"
+                class="contact-item"
+              >
+                <img
+                  class="icon"
+                  src="images/linkedin-icon.webp"
+                  alt="LinkedIn"
+                />
+              </a>
+            </div>
+            <div class="email-group">
+              <p class="email">alanheizenreder02@gmail.com</p>
+              <a href="mailto:alanheizenreder02@gmail.com" class="btn-email"
+                >Redactar mail 📧</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <h2>Proyectos</h2>
+
+        <div class="projects-grid">
+          <!-- Proyecto 1 -->
+          <a
+            href="https://bl4ckj4ck-21.netlify.app"
+            target="_blank"
+            class="project-link"
+          >
+            <div class="project-tile">
+              <img
+                src="images/proyects/Captura de pantalla 2025-09-15 140020.png"
+                alt="blackjack"
+                class="project-image"
+              />
+              <h3>BlackJack 21</h3>
+            </div>
+          </a>
+
+          <!-- Proyecto 2 -->
+          <a
+            href="https://wikiheroes.netlify.app"
+            target="_blank"
+            class="project-link"
+          >
+            <div class="project-tile">
+              <img
+                src="images/proyects/Captura de pantalla 2025-09-15 140115.png"
+                alt="wikiheroes"
+                class="project-image"
+              />
+              <h3>WikiHeroes</h3>
+            </div>
+          </a>
+
+          <!-- Proyecto 3 -->
+          <a
+            href="https://gif-exp3rt.netlify.app"
+            target="_blank"
+            class="project-link"
+          >
+            <div class="project-tile">
+              <img
+                src="images/proyects/Captura de pantalla 2025-09-15 140212.png"
+                alt="gifexpert"
+                class="project-image"
+              />
+              <h3>Gif Expert</h3>
+            </div>
+          </a>
+
+          <!-- Proyecto 4 -->
+          <a
+            href="https://ta-te-ti-adh.netlify.app"
+            target="_blank"
+            class="project-link"
+          >
+            <div class="project-tile">
+              <img
+                src="images/proyects/Captura de pantalla 2025-09-15 140259.png"
+                alt="tateti"
+                class="project-image"
+              />
+              <h3>TA TE TÍ</h3>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section id="certificaciones">
+        <h2>Certificaciones</h2>
+
+        <div class="certifications-grid">
+          <a
+            href="https://drive.google.com/file/d/1txj8_8OEOnl2-zEHxxm-Obp2CkFlUm7l/view?usp=drivesdk"
+            target="_blank"
+            class="certification-link"
+          >
+            <div class="certification-tile">
+              <div class="certification-item">
+                <img
+                  src="images/certifications/topundav.jpg"
+                  alt="Certificación"
+                  class="cert-image"
+                />
+                <h3>Certificación Ejemplo</h3>
+              </div>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section id="skills">
+        <h2>Habilidades</h2>
+        <div class="skills-carousel">
+          <div class="skills-track">
+            <a
+              href="https://developer.mozilla.org/es/docs/Web/HTML"
+              target="_blank"
+              class="skills-card-link"
+            >
+              <div class="skills-item">
+                <img src="images/html-icon.png" alt="Logo de HTML5" />
+                <p>HTML5</p>
+              </div>
+            </a>
+            <a
+              href="https://developer.mozilla.org/es/docs/Web/CSS"
+              target="_blank"
+              class="skills-card-link"
+            >
+              <div class="skills-item">
+                <img src="images/css-icon.png" alt="Logo de CSS3" />
+                <p>CSS3</p>
+              </div>
+            </a>
+            <a
+              href="https://es.react.dev/"
+              target="_blank"
+              class="skills-card-link"
+            >
+              <div class="skills-item">
+                <img src="images/react-icon.png" alt="Logo de React" />
+                <p>React</p>
+              </div>
+            </a>
+            <a
+              href="https://developer.mozilla.org/es/docs/Web/JavaScript"
+              target="_blank"
+              class="skills-card-link"
+            >
+              <div class="skills-item">
+                <img
+                  src="images/javascript-icon.webp"
+                  alt="Logo de JavaScript"
+                />
+                <p>JavaScript</p>
+              </div>
+            </a>
+            <a
+              href="https://www.python.org/"
+              target="_blank"
+              class="skills-card-link"
+            >
+              <div class="skills-item">
+                <img src="images/python-icon.png" alt="Logo de Python" />
+                <p>Python</p>
+              </div>
+            </a>
+            <a
+              href="https://www.java.com/"
+              target="_blank"
+              class="skills-card-link"
+            >
+              <div class="skills-item">
+                <img src="images/java-icon.png" alt="Logo de Java" />
+                <p>Java</p>
+              </div>
+            </a>
+            <a
+              href="https://isocpp.org/"
+              target="_blank"
+              class="skills-card-link"
+            >
+              <div class="skills-item">
+                <img src="images/cpp-icon.png" alt="Logo de C++" />
+                <p>C++</p>
+              </div>
+            </a>
+            <a
+              href="https://git-scm.com/"
+              target="_blank"
+              class="skills-card-link"
+            >
+              <div class="skills-item">
+                <img src="images/git-icon.png" alt="Logo de Git" />
+                <p>Git</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        © <span id="year"></span> Diseñado y desarrollado por Alan Heizenreder.
+      </p>
+    </footer>
+    <script src="scripts.js"></script>
+  </body>
+</html>
