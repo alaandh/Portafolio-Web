@@ -479,7 +479,7 @@ header {
   gap: 2rem;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 6rem;
+  padding: 0 1rem;
   width: 100%;
 }
 
@@ -489,7 +489,6 @@ header {
 }
 
 .project-tile {
-  margin: 1rem;
   background-color: #fff;
   padding: 1.5rem;
   border-radius: 8px;
@@ -619,14 +618,45 @@ header {
   }
 }
 
+@media (max-width: 900px) {
+  .skills-track {
+    grid-template-columns: repeat(2, minmax(220px, 1fr));
+  }
+}
+
+@media (min-width: 768px) {
+  .projects-grid {
+    padding: 0 6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .skills-carousel {
+    padding: 1.5rem 1.5rem;
+  }
+
+  .skills-track {
+    grid-template-columns: repeat(2, minmax(180px, 1fr));
+  }
+
+  .skills-item {
+    padding: 4rem;
+  }
+
+  .skills-item img {
+    width: 90px;
+    height: 90px;
+  }
+}
+
 /* Carrusel vertical para móviles */
 @media (max-width: 600px) {
   .skills-carousel {
     --skill-card-h: 140px;
-    --skill-gap: 1.5rem; /* <--- Aumentamos de 1rem a 1.5rem para dar más aire */
+    --skill-gap: 1.5rem;
 
     padding: 1.75rem 1rem 3rem;
-    /* Ajustamos el cálculo para que acompañe el nuevo gap */
+
     height: calc(3 * var(--skill-card-h) + 2 * var(--skill-gap) + 4rem);
 
     overflow-y: auto;
@@ -672,31 +702,6 @@ header {
     .skills-item img {
       width: 64px;
       height: 64px;
-    }
-  }
-
-  @media (max-width: 900px) {
-    .skills-track {
-      grid-template-columns: repeat(2, minmax(220px, 1fr));
-    }
-  }
-
-  @media (max-width: 768px) {
-    .skills-carousel {
-      padding: 1.5rem 1.5rem;
-    }
-
-    .skills-track {
-      grid-template-columns: repeat(2, minmax(180px, 1fr));
-    }
-
-    .skills-item {
-      padding: 4rem;
-    }
-
-    .skills-item img {
-      width: 90px;
-      height: 90px;
     }
   }
 }
