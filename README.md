@@ -13,7 +13,3 @@
 - **`images/`**: Carpeta para todas las imágenes y activos visuales utilizados.
 
 - **`README.md`**: Este archivo, con información sobre el proyecto.
-
-## Contacto
-
-Puedes encontrarme y contactarme a través de los elementos del portafolio
